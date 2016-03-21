@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/screen.js" defer></script>
+  <script src="js/keyboard.js" defer></script>
+  <script src="js/calculator.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<div class="calculator" data-component="calculator">
+  <div class="screen" data-component="screen">
+    <span class="screen-value" data-component="screen-result">0</span>
+  </div>
+  <div class="keyboard" data-component="keyboard">
+    <table>
+      <tr class="first">
+        <td data-selector="key" data-key-value="percent">%</td>
+        <td data-selector="key" data-key-value="sqrt">&#8730</td>
+        <td data-selector="key" data-key-value="sqr">&#119909&#178</td>
+        <td data-selector="key" data-key-value="fraction">&#185/&#119909</td>
+      </tr>
+      <tr>
+        <td class="text" data-key-value="ce">CE</td>
+        <td class="text" data-key-value="c">C</td>
+        <td data-key-value="back-space">⇐</td>
+        <td class="operator" data-key-value="divide">&#247</td>
+      </tr>
+      <tr>
+        <td class="number" data-key-value="7">7</td>
+        <td class="number" data-key-value="8">8</td>
+        <td class="number" data-key-value="9">9</td>
+        <td class="operator" data-key-value="multiply">&#215</td>
+      </tr>
+      <tr>
+        <td class="number" data-key-value="4">4</td>
+        <td class="number" data-key-value="5">5</td>
+        <td class="number" data-key-value="6">6</td>
+        <td class="operator" data-key-value="minus">-</td>
+      </tr>
+      <tr>
+        <td class="number" data-key-value="1">1</td>
+        <td class="number" data-key-value="2">2</td>
+        <td class="number" data-key-value="3">3</td>
+        <td class="operator" data-key-value="plus">+</td>
+      </tr>
+      <tr>
+        <td class="operator" data-key-value="plus-minus">&#177</td>
+        <td class="number" data-key-value="0">0</td>
+        <td class="number" data-key-value="dot">.</td>
+        <td class="equal operator" data-key-value="equal">=</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
