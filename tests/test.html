@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script src="http://chaijs.com/chai.js"></script>
+  <script>
+    var assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+<div data-component="calculator">
+  <div data-component="screen">
+    <span data-component="screen-result"></span>
+  </div>
+  <div data-component="keyboard">
+  </div>
+</div>
+
+<script src="../js/screen.js"></script>
+<script src="../js/keyboard.js"></script>
+<script src="../js/calculator.js"></script>
+<script src="calculatorTest.js"></script>
+
+<div id="mocha"></div>
+
+<script>
+  mocha.run();
+</script>
+</body>
+
+</html>
